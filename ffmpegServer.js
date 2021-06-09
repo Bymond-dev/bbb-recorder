@@ -38,8 +38,8 @@ wss.on('connection', function connection(ws, req) {
 	    '-vcodec', 'copy',
 
 	    // use if you need for smooth youtube publishing. Note: will use more CPU
-	    //'-vcodec', 'libx264',
-	    //'-x264-params', 'keyint=120:scenecut=0',
+	    '-vcodec', 'libx264',
+	    '-x264-params', 'keyint=120:scenecut=0',
 
 	    //No browser currently supports encoding AAC, so we must transcode the audio to AAC here on the server.
 	    '-acodec', 'aac',
