@@ -11,10 +11,10 @@ const ffmpegHost = ffmpegServer + ":" + ffmpegServerPort + "/auth/" + auth;
 
 var xvfb        = new Xvfb({
     silent: true,
-    xvfb_args: ["-screen", "0", "1920x1200x24", "-ac", "-nolisten", "tcp", "-dpi", "96", "+extension", "RANDR"]
+    xvfb_args: ["-screen", "0", "1280x800x24", "-ac", "-nolisten", "tcp", "-dpi", "96", "+extension", "RANDR"]
 });
-var width       = 1920;
-var height      = 1080;
+var width       = 1280;
+var height      = 720;
 var options     = {
   headless: false,
   args: [
